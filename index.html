@@ -1,33 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>дашборд | цитаты + погода</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-  <div class="weather-card">
-    <h2>Погода в <span id="city">...</span></h2>
-    <div id="weather">Загрузка...</div>
+  <div class="app">
+    <header>
+      <h1>🎯 просто дашборд</h1>
+      <p>цитаты, погода, настроение</p>
+    </header>
+
+    <main>
+      <div class="weather-block">
+        <h2>🌤 погода</h2>
+        <div id="weather">загружаю...</div>
+      </div>
+
+      <div class="quote-block">
+        <h2>💬 цитата дня</h2>
+        <div id="quote-text" class="quote-text"></div>
+        <div id="quote-author" class="quote-author"></div>
+        
+        <div class="buttons">
+          <button id="new-quote">🔁 новая</button>
+          <button id="save-quote">⭐ сохранить</button>
+          <button id="tweet-quote">🐦 твитнуть</button>
+        </div>
+      </div>
+
+      <div class="favorites-block">
+        <h2>📌 избранное</h2>
+        <ul id="favorites-list"></ul>
+      </div>
+    </main>
   </div>
 
-  <div class="quote-card">
-    <p id="quote">...</p>
-    <p id="author">...</p>
-    <div class="button">
-      <button id="new-quote">Новая цитата</button>
-      <button id="tweet">Скопировать</button>
-      <button id="favorite">В избранное</button>
-    </div>
-  </div>
-
-  <div class="favorite-ul">
-    <h3>Избранное</h3>
-    <ul id="favorite-list"></ul>
-  </div>
-</div>
-  <script scr="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-
